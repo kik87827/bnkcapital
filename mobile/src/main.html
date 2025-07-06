@@ -206,7 +206,13 @@
         <!-- // middle -->
         <script>
             window.addEventListener("load", () => {
+                // 퍼블확인용
+                let url = window.location.href.split('?')[1];
+                let url_2 = url !== undefined ? url.split('#')[0] : null;
 
+                if (url_2 === "menu") {
+                    document.querySelector(".btn_mobile_menu").click();
+                }
             })
         </script>
     </div>
