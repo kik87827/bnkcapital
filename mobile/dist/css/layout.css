@@ -18,15 +18,22 @@
 
 .header_zone{width:100%;background:#fff;box-sizing:border-box;border-bottom:1px solid #b8b8b8;height:52px;text-align: center;padding:0 51px;position:fixed;top:0;left:0;z-index:50}
 .header_zone.type2{padding-left:15px;background:#fff;}
-.header_zone.type2 .btn_mobile_menu_obj{background-color:#000;}
-.header_zone.type2 .btn_mobile_menu_obj:before{background-color:#000;}
-.header_zone.type2 .btn_mobile_menu_obj:after{background-color:#000;}
-.header_zone.type3{background:#d71f26;border-bottom:#d71f26;}
-.header_zone.type3 .header_sub_title_inner{color:#fff;}
+.header_zone.type2 .btn_mobile_menu_obj{background-color:#d71f26;}
+.header_zone.type2 .btn_mobile_menu_obj:before{background-color:#d71f26;}
+.header_zone.type2 .btn_mobile_menu_obj:after{background-color:#d71f26;}
+.header_zone.type3{background:#fff;border-bottom-color:#d71f26;}
+.header_zone.type3 .header_sub_title_inner{color:#333;}
+.header_zone.type3 .btn_top_home{background-image:url("../images/ico_tophome_r.png")}
+.header_zone.type4{background:#d71f26;border-bottom-color:#d71f26;}
+.header_zone.type4 .header_sub_title_inner{color:#fff;}
 
-.header_zone.type3 .btn_mobile_menu.type2 .btn_mobile_menu_obj{background:#fff;}
+.header_zone.type3 .btn_mobile_menu.type2 .btn_mobile_menu_obj{background:#d71f26;}
 .header_zone.type3 .btn_mobile_menu.type2 .btn_mobile_menu_obj:before,
-.header_zone.type3 .btn_mobile_menu.type2 .btn_mobile_menu_obj:after{background:#fff;}
+.header_zone.type3 .btn_mobile_menu.type2 .btn_mobile_menu_obj:after{background:#d71f26;}
+
+.header_zone.type4 .btn_mobile_menu.type2 .btn_mobile_menu_obj{background:#fff;}
+.header_zone.type4 .btn_mobile_menu.type2 .btn_mobile_menu_obj:before,
+.header_zone.type4 .btn_mobile_menu.type2 .btn_mobile_menu_obj:after{background:#fff;}
 
 .header_sub_title{display:flex;height:100%;align-items: center;}
 .header_sub_title_inner{font-size:16px;color:#1b1b1b;position:relative;top:-1px;word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;overflow: hidden;line-height:1.3;}
