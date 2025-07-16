@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/layout.css" />
+	<link rel="stylesheet" href="./css/contents.css" />
+	<script src="./js/jquery-3.6.0.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/ui.js"></script>
+	<title>BNK 캐피탈</title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- header -->
+		<header class="header_zone type3">
+			<a href="#" class="btn_top_home"><span class="hdtext">홈</span></a>
+
+			<h1 class="header_sub_title"><span class="header_sub_title_inner">MY인사</span></h1>
+
+			<a href="#" class="btn_mobile_menu type2">
+				<div class="btn_mobile_menu_obj"></div>
+				<span class="hdtext">전체메뉴 열기</span>
+			</a>
+			<!-- mobile_menu -->
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<!-- <ul class="mbutil_hlist">
+                <li><a href="#" class="mbutil">로그인</a></li>
+            </ul> -->
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<ul class="mbutil_hlist">
+							<li>
+								<a href="#" class="mbutil">로그아웃</a>
+							</li>
+						</ul>
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li><a href="#" class="mbmenu_one">MY인사</a></li>
+								<li><a href="#" class="mbmenu_one">신청내역</a></li>
+								<li><a href="#" class="mbmenu_one">미결함</a></li>
+								<li><a href="#" class="mbmenu_one">기결함</a></li>
+								<li><a href="#" class="mbmenu_one">근태신청</a></li>
+								<li><a href="#" class="mbmenu_one">특근신청</a></li>
+								<li><a href="#" class="mbmenu_one">증명서 신청</a></li>
+								<li><a href="#" class="mbmenu_one">국내출장신청</a></li>
+								<li><a href="#" class="mbmenu_one">부서근무현황</a></li>
+								<li><a href="#" class="mbmenu_one">급여명세서</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose">
+						<span class="hdtext">메인메뉴 닫기</span>
+					</a>
+				</div>
+			</div>
+			<!-- // mobile_menu -->
+		</header>
+		<!-- // header -->
+
+
+		<!-- middle -->
+		<section class="middle_zone">
+			<div class="middle_content_row type2">
+				<div class="fvtb_w">
+					<table class="fvtb">
+						<tbody>
+							<tr class="type2">
+								<td class="has_fphoto">
+									<div class="fphoto_z">
+										<div class="fphoto_w" style="background-image: url(./images/temp_profile.png)"></div>
+									</div>
+								</td>
+								<td class="has_fspec">
+									<div class="fvtb_w type2">
+										<table class="fvtb">
+											<tbody>
+												<tr>
+													<th><span class="fvth_sp">성명</span></th>
+													<td>
+														<div class="fvdata">홍길동</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="fvth_sp">소속</span></th>
+													<td>
+														<div class="fvdata">인재경영실</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="fvth_sp">입사일</span></th>
+													<td>
+														<div class="fvdata">2010.01.01</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="fvth_sp">호칭</span></th>
+													<td>
+														<div class="fvdata">위원</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tabcontent_w" id="tabcont_ui">
+					<div class="tabmenu_box_list_wrap">
+						<ul class="tabmenu_box_list">
+							<li>
+								<a href="#tabcont01" class="tabmenu_box active"><span class="tabmenu_box_text">기본</span></a>
+							</li>
+							<li>
+								<a href="#tabcont02" class="tabmenu_box"><span class="tabmenu_box_text">병력</span></a>
+							</li>
+							<li>
+								<a href="#tabcont03" class="tabmenu_box"><span class="tabmenu_box_text">발령</span></a>
+							</li>
+							<li>
+								<a href="#tabcont04" class="tabmenu_box"><span class="tabmenu_box_text">가족</span></a>
+							</li>
+							<li>
+								<a href="#tabcont05" class="tabmenu_box"><span class="tabmenu_box_text">학력</span></a>
+							</li>
+							<li>
+								<a href="#tabcont06" class="tabmenu_box"><span class="tabmenu_box_text">경력</span></a>
+							</li>
+							<li>
+								<a href="#tabcont07" class="tabmenu_box"><span class="tabmenu_box_text">어학</span></a>
+							</li>
+							<li>
+								<a href="#tabcont08" class="tabmenu_box"><span class="tabmenu_box_text">자격증</span></a>
+							</li>
+							<li>
+								<a href="#tabcont09" class="tabmenu_box"><span class="tabmenu_box_text">병역</span></a>
+							</li>
+							<li>
+								<a href="#tabcont10" class="tabmenu_box"><span class="tabmenu_box_text">장애</span></a>
+							</li>
+							<li>
+								<a href="#tabcont11" class="tabmenu_box"><span class="tabmenu_box_text">보훈</span></a>
+							</li>
+							<li>
+								<a href="#tabcont12" class="tabmenu_box"><span class="tabmenu_box_text">표창</span></a>
+							</li>
+							<li>
+								<a href="#tabcont13" class="tabmenu_box"><span class="tabmenu_box_text">징계</span></a>
+							</li>
+							<li>
+								<a href="#tabcont14" class="tabmenu_box"><span class="tabmenu_box_text">이름</span></a>
+							</li>
+							<li>
+								<a href="#tabcont15" class="tabmenu_box"><span class="tabmenu_box_text">주소/전화</span></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="tabmenu_cont_wrap">
+						<div class="tabmenu_cont active" id="tabcont01">
+							<div class="fvtb_w dtype4">
+								<table class="fvtb key_type">
+									<tr>
+										<th><span class="fvth_sp">직급</span></th>
+										<td>
+											<div class="fvdata">2급</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">직책</span></th>
+										<td>
+											<div class="fvdata">팀장</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">최초입사일</span></th>
+										<td>
+											<div class="fvdata">데이터</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">성별</span></th>
+										<td>
+											<div class="fvdata">데이터</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">생일</span></th>
+										<td>
+											<div class="fvdata">데이터</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">핸드폰</span></th>
+										<td>
+											<div class="fvdata">데이터</div>
+										</td>
+									</tr>
+									<tr>
+										<th><span class="fvth_sp">e-Mail</span></th>
+										<td>
+											<div class="fvdata">데이터</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="tabmenu_cont" id="tabcont02">tabcont02</div>
+						<div class="tabmenu_cont" id="tabcont03">tabcont03</div>
+						<div class="tabmenu_cont" id="tabcont04">tabcont04</div>
+						<div class="tabmenu_cont" id="tabcont05">tabcont05</div>
+						<div class="tabmenu_cont" id="tabcont06">tabcont06</div>
+						<div class="tabmenu_cont" id="tabcont07">tabcont07</div>
+						<div class="tabmenu_cont" id="tabcont08">tabcont08</div>
+						<div class="tabmenu_cont" id="tabcont09">tabcont09</div>
+						<div class="tabmenu_cont" id="tabcont10">tabcont10</div>
+						<div class="tabmenu_cont" id="tabcont11">tabcont11</div>
+						<div class="tabmenu_cont" id="tabcont12">tabcont12</div>
+						<div class="tabmenu_cont" id="tabcont13">tabcont13</div>
+						<div class="tabmenu_cont" id="tabcont14">
+							<div class="list_brick_item">
+								<p class="list_brick_title">이름</p>
+								<div class="fvtb_w dtype4">
+									<table class="fvtb key_type">
+										<tr>
+											<th><span class="fvth_sp">직급</span></th>
+											<td>
+												<div class="fvdata">2급</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">직책</span></th>
+											<td>
+												<div class="fvdata">팀장</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">최초입사일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">성별</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">생일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">핸드폰</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">e-Mail</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="list_brick_item">
+								<p class="list_brick_title">인적사항</p>
+								<div class="fvtb_w dtype4">
+									<table class="fvtb key_type">
+										<tr>
+											<th><span class="fvth_sp">직급</span></th>
+											<td>
+												<div class="fvdata">2급</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">직책</span></th>
+											<td>
+												<div class="fvdata">팀장</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">최초입사일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">성별</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">생일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">핸드폰</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">e-Mail</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="tabmenu_cont" id="tabcont15">
+							<div class="list_brick_item">
+								<p class="list_brick_title">주소사항</p>
+								<div class="fvtb_w dtype4">
+									<table class="fvtb key_type">
+										<tr>
+											<th><span class="fvth_sp">직급</span></th>
+											<td>
+												<div class="fvdata">2급</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">직책</span></th>
+											<td>
+												<div class="fvdata">팀장</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">최초입사일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">성별</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">생일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">핸드폰</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">e-Mail</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="list_brick_item">
+								<p class="list_brick_title">전화번호</p>
+								<div class="fvtb_w dtype4">
+									<table class="fvtb key_type">
+										<tr>
+											<th><span class="fvth_sp">직급</span></th>
+											<td>
+												<div class="fvdata">2급</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">직책</span></th>
+											<td>
+												<div class="fvdata">팀장</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">최초입사일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">성별</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">생일</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">핸드폰</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+										<tr>
+											<th><span class="fvth_sp">e-Mail</span></th>
+											<td>
+												<div class="fvdata">데이터</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- // middle -->
+
+		<script>
+			tabUITab("#tabcont_ui");
+		</script>
+	</div>
+</body>
+
+</html>
