@@ -448,6 +448,20 @@ input.props_form:checked{background-position:0 100%; border-color:#d71f26; backg
 .inline_opt_label{display:inline-block;white-space: nowrap;font-size:12px;color:#666;line-height:1;}
 .inline_opt_item dd > .dsel{}
 
+.inline_linked_list{display:flex; align-items:center; gap:5px;}
+.inline_linked_list > li{flex:1;}
+.inline_linked_list > li.short{flex:0;}
+.inline_linked_list > li.short.wid10{flex-basis:10%;}
+.inline_linked_list > li.short.wid15{flex-basis:15%;}
+.inline_linked_list > li.short.wid20{flex-basis:20%;}
+.inline_linked_list > li.short.wid25{flex-basis:25%;}
+.inline_linked_list > li.short.wid30{flex-basis:30%;}
+.inline_linked_list > li.short.wid35{flex-basis:35%;}
+.inline_linked_list > li.short.wid40{flex-basis:40%;}
+.inline_linked_list > li.short.wid45{flex-basis:45%;}
+.inline_linked_list > li.short.wid50{flex-basis:50%;}
+.inline_linked_list > li.short.wid55{flex-basis:55%;}
+
 
 .fvth_sp{position:relative;display:inline-block;white-space:nowrap;color:#1b1b1b;font-size:12px;position:relative;line-height:1.2;}
 .fvth_sp.imp{padding-left:8px;}
@@ -792,6 +806,7 @@ select.dsel.size2{padding:0 10px 0 5px;background-size:17px auto;min-width:20px;
 .search_form_inner{flex:1;min-width:0;}
 input.input_search{width:100%;height:28px;line-height:1;appearance: none;padding:0 10px;box-sizing: border-box;}
 input.input_search:disabled{background:none;}
+
 .btn_search_form_submit{width:28px;height:28px;flex:0 0 28px;background:url("../images/btn_searchico.png") no-repeat 50% 50%/12px auto;}
 
 
