@@ -51,6 +51,7 @@ select::-ms-expand {display: none;}
 .bdsym{font-family: 'NotoSans-Medium' !important;color:#000 !important}
 .bdsym *{font-family: 'NotoSans-Medium' !important;color:#000 !important}
 .touchDis {touch-action: none;overflow:hidden;position:relative;}
+.clamp_01{word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:1;overflow: hidden;}
 .ellips{display:inline-block; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
 .hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
 .clearboth{clear:both; display:block; height:0;}
