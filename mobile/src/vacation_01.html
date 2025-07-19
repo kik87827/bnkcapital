@@ -6,7 +6,138 @@
       @@include('./include/header_sub.html', { page_sub: true, sub_title: "휴가신청" })
 
       <!-- middle -->
-      <section class="middle_zone">내용이 들어갑니다.</section>
+      <section class="middle_zone">
+        <div class="form_field_item_zone">
+          <div class="form_field_item_group">
+            <div class="form_field_item">
+              <div class="form_field_content_row">
+                <div class="fvtb_w type3">
+                  <table class="fvtb">
+                    <tbody>
+                      <tr>
+                        <th class="has_fvth_sp"><span class="fvth_sp imp">휴가년도</span></th>
+                        <td class="has_fitem">
+                          <input type="text" class="fvint acenter" style="width: 70px" value="2025" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="has_fvth_sp"><span class="fvth_sp imp">사번</span></th>
+                        <td class="has_fitem">
+                          <div class="inline_linked_wrap">
+                            <ul class="inline_linked_list">
+                              <li class="short wid35"><input type="text" class="fvint" /></li>
+                              <li><input type="text" class="fvint" /></li>
+                            </ul>
+                            <ul class="inline_linked_list">
+                              <li class="short"><input type="text" class="fvint" style="width: 60px" disabled value="인사팀" /></li>
+                              <li class="short"><input type="text" class="fvint" style="width: 60px" disabled value="4급" /></li>
+                              <li>
+                                <div class="search_form_container type2">
+                                  <div class="search_form_inner">
+                                    <input type="text" class="input_search" disabled value="매니저" />
+                                  </div>
+                                  <a href="#" class="btn_search_form_submit"><span class="hdtext">검색</span></a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="has_fvth_sp"><span class="fvth_sp imp">처리구분</span></th>
+                        <td class="has_fitem">
+                          <select class="dsel" style="width: 50%">
+                            <option>전체</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="form_field_item">
+              <div class="form_field_title_row type2">
+                <p class="form_field_title">도움말</p>
+              </div>
+              <div class="form_field_content_row no_gap">
+                <div class="form_note_box">
+                  <ul class="bullet_para_list">
+                    <li>등록된 내용이 없습니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form_field_item">
+              <div class="form_field_title_row type2">
+                <p class="form_field_title">휴가현황</p>
+                <a href="javascript:;" class="btn_csm type3">휴가신청</a>
+              </div>
+              <div class="form_field_content_row">
+                <div class="tbsk_tb_w">
+                  <table class="tbsk_tb no_fix">
+                    <thead>
+                      <tr>
+                        <th>적용</th>
+                        <th>발생일수</th>
+                        <th>사용일수</th>
+                        <th>잔여일수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>텍스트</td>
+                        <td>2025.07.19</td>
+                        <td>1일</td>
+                        <td>10일</td>
+                      </tr>
+                      <tr>
+                        <td>텍스트</td>
+                        <td>2025.07.19</td>
+                        <td>1일</td>
+                        <td>10일</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="form_field_item">
+              <div class="form_field_title_row type2">
+                <p class="form_field_title">휴가내역</p>
+              </div>
+              <div class="form_field_content_row">
+                <div class="tbsk_tb_w">
+                  <table class="tbsk_tb no_fix">
+                    <thead>
+                      <tr>
+                        <th>휴가종류</th>
+                        <th>시작일자</th>
+                        <th>종료일자</th>
+                        <th>상세보기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>병원방문</td>
+                        <td>2025.07.19</td>
+                        <td>2025.07.19</td>
+                        <td class="nobreak"><a href="#" class="btn_csm xxsm">상세보기</a></td>
+                      </tr>
+                      <tr>
+                        <td>개인사정</td>
+                        <td>2025.07.19</td>
+                        <td>2025.07.19</td>
+                        <td class="nobreak"><a href="#" class="btn_csm xxsm">상세보기</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- // middle -->
     </div>
   </body>
