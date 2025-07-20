@@ -1174,7 +1174,7 @@ input.input_search:disabled{background:none;}
 	display: block;
 	content: '';
 	width: 1px;
-	height: 100%;
+	height: calc(100% + 1px);
 	background: #777b83;
 	position: absolute;
 	top: 0;
@@ -1218,6 +1218,9 @@ input.input_search:disabled{background:none;}
 	transform: translateX(-50%);
 	width: 0;
 	height: 0;
+}
+.tabmenu_box.active:before{
+	display:block; content: ''; left:-1px; width:1px;height:calc(100% + 1px); background:#00448d; position:absolute;top:0;left:-1px;
 }
 
 .tabmenu_box_text {
