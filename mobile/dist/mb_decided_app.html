@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="./css/reset.css" />
 	<link rel="stylesheet" href="./css/layout.css" />
+	<link rel="stylesheet" href="./css/jqueryui.css" /><!-- 20250805 추가 -->
 	<link rel="stylesheet" href="./css/contents.css" />
 	<script src="./js/jquery-3.6.0.js"></script>
 	<script src="./js/jquery-ui.js"></script>
@@ -137,7 +138,9 @@
 												<tr>
 													<th class="has_fvth_sp"><span class="fvth_sp imp">신청일</span></th>
 													<td class="has_fitem">
-														<input type="date" class="input_calendar" disabled="" value="2020-12-26" />
+														<!-- 20250805 달력변경 -->
+														<input type="text" class="fvint calendar" readonly disabled value="2020-12-26" />
+														<!-- // 20250805 달력변경 -->
 													</td>
 												</tr>
 												<tr>

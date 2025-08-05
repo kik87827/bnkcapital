@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="./css/reset.css" />
 	<link rel="stylesheet" href="./css/layout.css" />
+	<link rel="stylesheet" href="./css/jqueryui.css" /><!-- 20250805 추가 -->
 	<link rel="stylesheet" href="./css/contents.css" />
 	<script src="./js/jquery-3.6.0.js"></script>
 	<script src="./js/jquery-ui.js"></script>
@@ -89,12 +90,14 @@
 											<button type="button" class="props_button">기간</button>
 										</div>
 									</div>
-									<div class="td_block2" style="display: none;">
+									<div class="td_block2" style="display: none">
 										<div class="fvinitem_list_w">
 											<ul class="fvinitem_list">
-												<li><input type="date" class="input_calendar"></li>
+												<!-- 20250805 달력변경 -->
+												<li><input type="text" class="fvint calendar" readonly /></li>
 												<li class="has_fvelse3"><span class="fvelse">~</span></li>
-												<li><input type="date" class="input_calendar"></li>
+												<li><input type="text" class="fvint calendar" readonly /></li>
+												<!-- // 20250805 달력변경 -->
 											</ul>
 										</div>
 									</div>
@@ -120,7 +123,7 @@
 											<div class="fv_liner_wrap">
 												<div class="fv_liner_long">
 													<div class="autocomplete_form_wrap">
-														<input type="text" class="fvint input_auto" id="input_auto_01">
+														<input type="text" class="fvint input_auto" id="input_auto_01" />
 													</div>
 												</div>
 												<div class="fv_liner_short"><button class="btn_toggle_item"></button></div>
@@ -136,8 +139,8 @@
 					</table>
 				</div>
 				<style>
-					[name='history_table'] .ctb_wid04 {
-						width: 60px
+					[name="history_table"] .ctb_wid04 {
+						width: 60px;
 					}
 				</style>
 				<div class="hvtb_w type2 mt20">
@@ -145,11 +148,11 @@
 						<tbody>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#008000">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#ffa500">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #008000">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #ffa500">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -158,11 +161,11 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#0000FF">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#8a2be2">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #0000ff">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #8a2be2">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -171,11 +174,11 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#2c68e4">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#1bd7d7">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #2c68e4">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #1bd7d7">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -184,11 +187,11 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#61b1d0">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#ff7f50">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #61b1d0">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #ff7f50">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -197,11 +200,11 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#d8ba1f">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#a52a2a">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #d8ba1f">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #a52a2a">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -210,11 +213,11 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#ff00ff">증명서신청</span></td>
-								<td class="ctb_wid03"><span class="tb_data" style="color:#5f9ea0">수신결재중</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #ff00ff">증명서신청</span></td>
+								<td class="ctb_wid03"><span class="tb_data" style="color: #5f9ea0">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
 							<tr>
@@ -223,10 +226,10 @@
 							</tr>
 							<tr>
 								<td class="has_wpsp has_ico fir" rowspan="2">
-									<input type="checkbox" class="rdchk">
+									<input type="checkbox" class="rdchk" />
 								</td>
 								<td class="ctb_wid01"><span class="tb_data">2020.01.01</span></td>
-								<td class="ctb_wid02"><span class="tb_data" style="color:#229f54">증명서신청</span></td>
+								<td class="ctb_wid02"><span class="tb_data" style="color: #229f54">증명서신청</span></td>
 								<td class="ctb_wid03"><span class="tb_data">수신결재중</span></td>
 								<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">상세보기</a></td>
 							</tr>
@@ -255,8 +258,8 @@
 			propsButton();
 			autoComplete([{
 				target: "#input_auto_01",
-				data: ["김지윤(경영HR센터)", "김지훈(사업팀)", "김지희(경영교육혁신센터)"]
-			}]);
+				data: ["김지윤(경영HR센터)", "김지훈(사업팀)", "김지희(경영교육혁신센터)"],
+			}, ]);
 		</script>
 	</div>
 </body>
