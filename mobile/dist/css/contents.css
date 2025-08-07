@@ -37,7 +37,7 @@
 .mc_sub_menu_list{display:flex;flex-wrap:wrap;padding:0 0 16px;}
 .mc_sub_menu_list > li{flex:0 0 33.333333333333333333%;padding-top:16px;}
 .mc_sub_menu{display:block;text-align: center;}
-.mc_sub_menu:before{display:block;content:'';width:40px;height:40px;margin:0 auto;background:url("../images/ico_quick_mc.png") no-repeat 0 0/100% auto;}
+.mc_sub_menu:before{display:block;content:'';width:40px;height:40px;margin:0 auto;background:url("../images/ico_quick_mc_v2.png") no-repeat 0 0/100% auto;}
 .mc_sub_menu.ico_01:before{background-position:0 0;}
 .mc_sub_menu.ico_02:before{background-position:0 -40px;}
 .mc_sub_menu.ico_03:before{background-position:0 -80px;}
@@ -47,7 +47,12 @@
 .mc_sub_menu.ico_07:before{background-position:0 -240px;}
 .mc_sub_menu.ico_08:before{background-position:0 -280px;}
 .mc_sub_menu.ico_09:before{background-position:0 -320px;}
-.mc_sub_menu.ico_10:before{background-position:0 100%;}
+.mc_sub_menu.ico_10:before{background-position:0 -360px;}
+.mc_sub_menu.ico_11:before{background-position:0 -400px;}
+.mc_sub_menu.ico_12:before{background-position:0 -440px;}
+.mc_sub_menu.ico_13:before{background-position:0 -480px;}
+.mc_sub_menu.ico_14:before{background-position:0 -520px;}
+.mc_sub_menu.ico_15:before{background-position:0 100%;}
 .mc_sub_menu_text{color:#333333;line-height:1.3;font-size:14px;margin-top:5px;}
 
 
