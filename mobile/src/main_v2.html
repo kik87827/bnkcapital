@@ -132,15 +132,15 @@
                 <i class="ico_mc_box ico_chart"></i>
                 <span class="mc_box_title_text">연차현황</span>
               </div>
+              <div class="mc_box_else_wrap">
+                <a href="#" class="btn_mcbox_role">바로가기</a>
+              </div>
             </div>
             <div class="mc_box_content_row">
               <ul class="mc_chart_item_list">
                 <li>
                   <div class="chart_key_wrap">
-                    <span class="chart_key">
-                      연차
-                      <span class="chart_key_sub">(1년미만)</span>
-                    </span>
+                    <span class="chart_key">발생일수/사용일수</span>
                   </div>
                   <div class="chart_contents_wrap">
                     <div class="chart_flex_wrap">
@@ -149,38 +149,52 @@
                           <div class="chart_current_bar" style="width: 10.2%; background-color: #ef8616">
                             <div class="bar_tooltip_zone">
                               <div class="bar_tooltip_wrap">
-                                <span class="tooltip_value_main">10.2</span>
-                                <span class="tooltip_value_unit">%</span>
+                                <span class="tooltip_value_main">2일 3시간 사용</span>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="chart_bar_summary_wrap">
-                          <span class="chart_bar_summary_current">16시간 00분</span>
-                          <span class="chart_bar_summary_part">/</span>
-                          <span class="chart_bar_summary_length">48시간 00분</span>
+                          <span class="chart_bar_summary_current">2일 3시간 사용</span>
                         </div>
                       </div>
                       <div class="chart_text_count_item">
-                        <span class="chart_text_count_current">1</span>
-                        <span class="chart_text_count_part">/</span>
-                        <span class="chart_text_count_length">6</span>
-                        <span class="chart_text_count_unit">일</span>
+                        <div class="chart_text_count_group">
+                          <span class="chart_text_count_current">19</span>
+                          <span class="chart_text_count_unit">일</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </li>
+                <li class="type2">
+                  <div class="chart_key_wrap">
+                    <span class="chart_key">신청중</span>
+                  </div>
+                  <div class="chart_contents_wrap">
+                    <p class="chart_contents_total_value">
+                      <!-- prettier-ignore -->
+                      <span class="ctvalue_group">
+                        <strong class="emp">0</strong>
+                        <span class="ctvalue_unit">일</span>
+                       </span>
+                      <span class="ctvalue_group">
+                        <strong class="emp">5</strong>
+                        <span class="ctvalue_unit">시간</span>
+                      </span>
+                    </p>
+                  </div>
+                </li>
                 <li>
-                  <div class="chart_key_wrap"><span class="chart_key">연차</span></div>
+                  <div class="chart_key_wrap"><span class="chart_key">잔여일수</span></div>
                   <div class="chart_contents_wrap">
                     <div class="chart_flex_wrap">
                       <div class="chart_bar_cols">
                         <div class="chart_bar_wrap">
-                          <div class="chart_current_bar" style="width: 33.3%; background-color: #6badf5">
+                          <div class="chart_current_bar" style="width: 5%; background-color: #6badf5">
                             <div class="bar_tooltip_zone">
                               <div class="bar_tooltip_wrap">
-                                <span class="tooltip_value_main">33.3</span>
-                                <span class="tooltip_value_unit">%</span>
+                                <span class="tooltip_value_main">16일 0시간</span>
                               </div>
                             </div>
                           </div>
@@ -192,53 +206,16 @@
                         </div>
                       </div>
                       <div class="chart_text_count_item">
-                        <span class="chart_text_count_current">5</span>
-                        <span class="chart_text_count_part">/</span>
-                        <span class="chart_text_count_length">15</span>
-                        <span class="chart_text_count_unit">일</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="chart_key_wrap"><span class="chart_key">보상휴가</span></div>
-                  <div class="chart_contents_wrap">
-                    <div class="chart_flex_wrap">
-                      <div class="chart_bar_cols">
-                        <div class="chart_bar_wrap">
-                          <div class="chart_current_bar" style="background-color: #53c5a9; width: 33.3%">
-                            <div class="bar_tooltip_zone">
-                              <div class="bar_tooltip_wrap">
-                                <span class="tooltip_value_main">33.3</span>
-                                <span class="tooltip_value_unit">%</span>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="chart_text_count_group">
+                          <span class="chart_text_count_current">16</span>
+                          <span class="chart_text_count_unit">일</span>
                         </div>
-                        <div class="chart_bar_summary_wrap">
-                          <span class="chart_bar_summary_current">16시간 00분</span>
-                          <span class="chart_bar_summary_part">/</span>
-                          <span class="chart_bar_summary_length">24시간 00분</span>
+                        <div class="chart_text_count_group">
+                          <span class="chart_text_count_current">0</span>
+                          <span class="chart_text_count_unit">시간</span>
                         </div>
                       </div>
-                      <div class="chart_text_count_item">
-                        <span class="chart_text_count_current">2</span>
-                        <span class="chart_text_count_part">/</span>
-                        <span class="chart_text_count_length">3</span>
-                        <span class="chart_text_count_unit">일</span>
-                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="type2">
-                  <div class="chart_key_wrap">
-                    <span class="chart_key">
-                      근무시간
-                      <span class="chart_key_sub">(누적)</span>
-                    </span>
-                  </div>
-                  <div class="chart_contents_wrap">
-                    <p class="chart_contents_total_value">총 200시간</p>
                   </div>
                 </li>
               </ul>
@@ -247,7 +224,17 @@
         </div>
       </section>
       <!-- // middle -->
+      <section class="bottom_nav_layer">
+        <ul class="bottom_nav_list">
+          <li><a href="#" class="bottom_nav_item ico_01"></a></li>
+          <li><a href="#" class="bottom_nav_item ico_02"></a></li>
+          <li><a href="#" class="bottom_nav_item ico_03"></a></li>
+        </ul>
+      </section>
       <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          mcMenuMore();
+        });
         window.addEventListener("load", () => {
           // 퍼블확인용
           let url = window.location.href.split("?")[1];

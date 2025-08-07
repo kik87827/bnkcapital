@@ -375,3 +375,28 @@ function datePiceker() {
       });
     });
   }
+
+  function mcMenuMore(){
+    const mcMenuLi = document.querySelectorAll(".mc_sub_menu_list > li");
+    const mcMoreBtn = document.querySelector(".btn_morebox");
+
+    let visibleCount = 9;
+    const step = 6;
+
+    function updateVisibleItems(){
+      mcMenuLi.forEach((item,index)=>{
+        item.style.display = index < visibleCount ? "block" : "none";
+      });
+      if (visibleCount >= mcMenuLi.length){
+        mcMoreBtn.style.display = "none";
+      }
+    }
+
+    mcMoreBtn.addEventListener("click",(e)=>{
+      e.preventDefault();
+      visibleCount += step;
+      updateVisibleItems();
+    });
+
+    updateVisibleItems();
+  }
