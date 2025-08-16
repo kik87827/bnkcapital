@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link rel="stylesheet" href="./css/jqueryui.css" /><!-- 20250805 추가 -->
+		<link rel="stylesheet" href="./css/contents.css" />
+		<script src="./js/jquery-3.6.0.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/monthpicker.js"></script>
+		<script src="./js/ui.js"></script>
+		<title>BNK 캐피탈</title>
+	</head>
+
+</head>
+
+<body>
+	<h1>Welcome to jQuery UI Datepicker Month &amp; Year Picker Addon!</h1>
+
+	<div class="ui-widget">
+		<p>This page demonstrates the addon.</p>
+	</div>
+
+	<h1>Example:</h1>
+
+	<!-- Datepicker -->
+	<h2 class="demoHeaders">Datepicker</h2>
+	<div>
+		<p>Click on the [Month Year] link to see the magic:</p>
+	</div>
+
+	<h3>Date field</h3>
+	<input type="text" id="datepicker" />
+	<!-- 
+<h3>Inline datepicker</h3>
+<div id="datepicker-inline"></div> -->
+	<style>
+		.ui-datepicker .ui-datepicker-select-month td,
+		.ui-datepicker .ui-datepicker-select-year td {
+			white-space: nowrap;
+		}
+	</style>
+	<script>
+		/* $( "#datepicker-inline" ).datepicker({
+	inline: true
+}); */
+		$("#datepicker").datepicker({
+			dateFormat: "yy-mm-dd", // 날짜 형식
+			showButtonPanel: true, // 오늘/완료 버튼 표시
+			showMonthAfterYear: true,
+			yearSuffix: "년",
+			closeText: "닫기",
+			prevText: "이전달",
+			nextText: "다음달",
+			currentText: "오늘",
+			monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+			monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+			dayNames: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+			dayNamesShort: ["일", "월", "화", "수", "목", "금", "토"],
+			dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+			showOtherMonths: true, // 👉 이전/다음 달 날짜도 달력에 표시
+			selectOtherMonths: true, // 👉 이전/다음 달 날짜도 선택 가능
+			onSelect: function(dateText, inst) {
+				const $input = inst.input; // 현재 선택된 input
+				if ($input.attr("id") === "wiEdate") {
+					const wiEdateType = document.getElementsByName("wiEdateType");
+					for (let i = 0; i < wiEdateType.length; i++) {
+						wiEdateType[i].checked = false;
+					}
+				}
+			},
+		});
+	</script>
+</body>
+
+</html>

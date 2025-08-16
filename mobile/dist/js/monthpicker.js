@@ -60,7 +60,7 @@ MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. */
 			//console.log($('<div>').append(this.dpDiv.clone()).html());
 
 			var uidptitle = inst.dpDiv.find('.ui-datepicker-title');
-			var uidptitle_link = uidptitle.wrapInner('<a href="#"/>');
+			var uidptitle_link = uidptitle.wrapInner('<a href="#" class="ui-datepicker-link" />');
 			uidptitle_link.click(function(){$.datepicker._toggleDisplay_MonthYearPicker('#' + inst.id, 2); return false;});
 
 			inst.dpDiv.children('table.ui-datepicker-calendar').after(this._generateExtraHTML_MonthYearPicker(inst));
@@ -223,7 +223,7 @@ MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. */
 						}
 					};
 					//change title link behaviour
-					dpTitle.html('<a href="#" class="ui-datepicker-yearpicker" onclick="jQuery.datepicker._toggleDisplay_MonthYearPicker(\'#' + inst.id + '\', 3);return false;">' + drawYear +'</a>');
+					dpTitle.html('<a href="#" class="ui-datepicker-yearpicker" onclick="jQuery.datepicker._toggleDisplay_MonthYearPicker(\'#' + inst.id + '\', 3);return false;">' + drawYear +'년</a>');
 					//change prev next behaviour
 					dpPrev.removeAttr('onclick');  //remove DatePicker's onclick event
 					dpNext.removeAttr('onclick');  //remove DatePicker's onclick event
@@ -254,9 +254,9 @@ MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. */
 					var _updateYearPicker_MYP = function(year) {
 						//TODO RTL
 						//change title html
-                        dpTitle.html('<a class="ui-datepicker-title" '+
+                        dpTitle.html('<a class="ui-datepicker-title-while" '+
 						'onclick="return $.backToActualMonth();" '+
-					    'href="#">'+ year + '-' + (year + 9) + '</a>');
+					    'href="#">'+ year + '년 ~ ' + (year + 9) + '년</a>');
 						//change prev next behaviour
 						dpPrev.unbind('click');
 						dpNext.unbind('click');

@@ -87,7 +87,7 @@
 	height: 100%;
 }
 .ui-datepicker {
-	width: 212px;
+	width: 270px;
 	box-sizing: border-box;
 	 padding:0 16px;
 	z-index:100000 !important;
@@ -169,7 +169,7 @@
 .ui-datepicker td span,
 .ui-datepicker td a {
 	display: block;
-	width:24px; height:24px; box-sizing: border-box; margin: 0 auto; line-height:24px;
+	width:32px; height:32px; box-sizing: border-box; margin: 0 auto; line-height:32px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -331,7 +331,7 @@
 .ui-widget-header .ui-state-active {
 	padding:0;
 	text-align:center;
-	border-top:1px solid #0258AD;
+	background:#ddd; border-radius:100%;
 }
 .ui-state-active a,
 .ui-state-active a:link,
@@ -350,8 +350,8 @@
 	border-radius:100%;
 	min-width:8px;text-align:center;
 	padding:0;
-	height:24px;line-height:24px;
-	width:24px;
+	height:32px;line-height:32px;
+	width:32px;
 	margin:0 auto;
 }
 .ui-state-highlight a,
@@ -634,9 +634,33 @@
 }
 .ui-datepicker-trigger{position:relative;top:0;left:5px;height:34px;width:34px;vertical-align:middle;display:inline-block;}
 .ui-datepicker-trigger img{position:relative;top:2px;}
-.ui-datepicker-title select{font-family: 'Noto Sans','맑은 고딕','malgunweb';color:#333;padding: 0 25px 2px 5px;height:30px; line-height:28px;box-sizing:border-box;min-width:80px;border:1px solid #bbbbbb;
+.ui-datepicker-title select{font-family: 'Noto Sans','맑은 고딕','malgunweb';color:#333;padding: 0 25px 2px 5px;height:32px; line-height:30px;box-sizing:border-box;min-width:80px;border:1px solid #bbbbbb;
 background: #fff url("../images/bg_fsel.png") no-repeat 100% 50%;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .ui-datepicker-title select::-ms-expand {display: none;}
+
+
+/* jquery ui datepicker month year picker */
+.ui-datepicker .ui-datepicker-select-month td ,
+.ui-datepicker .ui-datepicker-select-year td {
+	
+}
+.ui-datepicker .ui-datepicker-select-month td span,
+.ui-datepicker .ui-datepicker-select-month td a,
+.ui-datepicker .ui-datepicker-select-year td span,
+.ui-datepicker .ui-datepicker-select-year td a  {
+	font-size: 12px;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-select-year td.outoffocus {
+	opacity: 0.5;
+}
+a.ui-datepicker-yearpicker,a.ui-datepicker-title-while,.ui-datepicker-link{
+	display:inline-block; position:relative; padding-right:17px;
+}
+a.ui-datepicker-yearpicker:after,
+.ui-datepicker-link:after,
+a.ui-datepicker-title-while:after{display:block;content:'';width:6px;height:6px;border-right:1px solid #333;border-bottom:1px solid #333;position:absolute;top:3px;right:1px; transform: rotate(45deg);}
+
 
 @media (max-width:767px){
 	.ui-datepicker{width:calc(100% - 30px) !important;box-sizing: border-box;left:15px !important;}
