@@ -195,7 +195,7 @@ MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. */
 					var inMaxYear = (maxYear !== undefined && maxYear == drawYear);
 					var _advanceYear_MYP = function(diff) {
 						inst.drawYear = drawYear += diff;
-						dpTitle.children(':first').text(drawYear);
+						dpTitle.children(":first").text(drawYear + "년");
 						//update screen
 						if(minDate || maxDate) {
 							inMinYear = minYear == drawYear;
